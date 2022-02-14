@@ -2,11 +2,12 @@
 filename=/dev/nvme0n1
 bs=192k
 direct=1
-ioengine=sync
+ioengine=psync
 iodepth=1
 norandommap
 log_avg_msec=1000
 size=100%
+
 [Worker]
 rw=write
 size=100%
