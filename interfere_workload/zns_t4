@@ -3,8 +3,7 @@ ioengine=sync
 rw=write
 numjobs=1
 bs=192K
-size=4G
-direct=1
+size=1G
 time_based=1
 randrepeat=0
 norandommap

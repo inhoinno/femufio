@@ -1,6 +1,6 @@
 [global]
 ioengine=sync
-rw=read
+rw=trim
 numjobs=1
 ;bs=192K
 size=4G
