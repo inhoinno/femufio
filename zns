@@ -24,8 +24,8 @@ write_lat_log=./zns_default
 
 [worker2]
 startdelay=0
-size=256M
-offset=0
+;size=256M
+offset=128M
 write_iops_log=./zns_default
 write_bw_log=./zns_default
 write_lat_log=./zns_default
