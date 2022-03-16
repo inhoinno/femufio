@@ -3,7 +3,7 @@ ioengine=sync
 rw=write
 numjobs=1
 ;bs=
-size=2G
+size=128M
 direct=1
 time_based=1
 randrepeat=0
@@ -24,7 +24,8 @@ write_lat_log=./zns_default
 
 [worker2]
 startdelay=0
-offset=2G
+size=256M
+offset=0
 write_iops_log=./zns_default
 write_bw_log=./zns_default
 write_lat_log=./zns_default
