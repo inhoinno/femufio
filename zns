@@ -11,7 +11,7 @@ norandommap
 zonesize=128M
 zonemode=zbd
 runtime=60
-log_avg_msec=10
+log_avg_msec=1000
 filename=/dev/nvme0n1
 
 [worker1]
