@@ -1,5 +1,5 @@
 [global]
-ioengine=sync
+ioengine=libaio
 rw=write
 numjobs=1
 ;bs=
