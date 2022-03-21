@@ -10,7 +10,7 @@ randrepeat=0
 norandommap
 zonesize=128M
 zonemode=zbd
-runtime=60
+runtime=300
 log_avg_msec=1000
 filename=/dev/nvme0n1
 
@@ -21,7 +21,7 @@ write_bw_log=./zns_1to4
 write_lat_log=./zns_1to4
 
 [worker2]
-startdelay=30
+startdelay=100
 offset=2G
 write_iops_log=./zns_1to4
 write_bw_log=./zns_1to4
