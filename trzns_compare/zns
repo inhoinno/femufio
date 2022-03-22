@@ -1,7 +1,7 @@
 [global]
 ioengine=sync
 rw=write
-numjobs=1
+numjobs=16
 ;bs=
 size=4G
 direct=1
@@ -15,7 +15,7 @@ log_avg_msec=1000
 filename=/dev/nvme0n1
 
 [worker1]
-startdelay=0
-write_iops_log=./zns_1to4
-write_bw_log=./zns_1to4
-write_lat_log=./zns_1to4
+startdelay=10
+write_iops_log=./zns_1to32
+write_bw_log=./zns_1to32
+write_lat_log=./zns_1to32
