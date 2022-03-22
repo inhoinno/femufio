@@ -3,6 +3,7 @@
 ioengine=sync
 rw=randwrite
 numjobs=4
+loops=3
 size=4G
 direct=1
 time_based=1
@@ -12,9 +13,9 @@ norandommap
 ;steadystate=iops_slope:7.0%
 log_avg_msec="1000
 filename=/dev/nvme0n1
-
-[worker1]
 startdelay=0
 write_bw_log=./tr_rand
 write_lat_log=./tr_rand
 write_iops_log=./tr_rand
+
+[worker1]
