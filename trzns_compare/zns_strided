@@ -1,25 +1,24 @@
 [global]
-ioengine=sync
+ioengine=l
 rw=write
-bs=128K
+;bs=128K
 size=512M
-loops=4
-direct=1
+;loops=4
+;direct=1
 group_reporting
 time_based=1
 randrepeat=0
 norandommap
-zonemode=zbd
+zonemode=strided
+offset_increment=z
 zonesize=128M
-offset_increment=512M
-runtime=600
+runtime=60
 log_avg_msec=1000
 filename=/dev/nvme0n1
 write_iops_log=./zns_1to1
 write_bw_log=./zns_1to1
 write_lat_log=./zns_1to1
 numjobs=8
-
 [worker1]
 
 
