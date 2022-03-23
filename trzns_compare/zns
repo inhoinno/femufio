@@ -4,13 +4,12 @@ rw=write
 bs=128K
 size=512M
 numjobs=8
-offset_increment=z
+;offset_increment=z
 direct=1
 group_reporting
 time_based=1
 randrepeat=0
 norandommap
-zonesize=128M
 zonemode=zbd
 runtime=200
 log_avg_msec=1000
@@ -20,4 +19,4 @@ write_bw_log=./zns_1to1
 write_lat_log=./zns_1to1
 
 [worker1]
-startdelay=0
+group_reporting
