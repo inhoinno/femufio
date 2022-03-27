@@ -1,8 +1,8 @@
 [global]
 ioengine=libaio
 rw=write
-numjobs=8
-bs=128K
+numjobs=1
+bs=16K
 size=128M
 direct=1
 time_based=1
@@ -10,8 +10,8 @@ randrepeat=0
 norandommap
 zonesize=128M
 zonemode=zbd
-runtime=60
-log_avg_msec=1000
+;runtime=60
+log_avg_msec=100
 filename=/dev/nvme0n1
 
 [worker1]
