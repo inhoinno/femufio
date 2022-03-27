@@ -2,7 +2,7 @@
 ioengine=libaio
 rw=write
 numjobs=1
-bs=4K
+bs=16K
 size=128M
 direct=1
 time_based=1
