@@ -2,7 +2,7 @@
 ioengine=libaio
 rw=write
 numjobs=1
-bs=128K
+bs=512K
 size=128M
 direct=1
 time_based=1
@@ -16,9 +16,9 @@ filename=/dev/nvme0n1
 
 [worker1]
 startdelay=0
-write_iops_log=./zns_1to1
-write_bw_log=./zns_1to1
-write_lat_log=./zns_1to1
+write_iops_log=./zns_1to32
+write_bw_log=./zns_1to32
+write_lat_log=./zns_1to32
 
 ;[worker2]
 ;startdelay=100
