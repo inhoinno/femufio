@@ -1,0 +1,23 @@
+;Multi-thread write workload
+[global]
+ioengine=libaio
+rw=write
+numjobs=1
+offset=0
+loops=2
+size=100%
+bs=512K
+direct=1
+time_based=1
+randrepeat=1
+norandommap
+runtime=600
+;steadystate=iops_slope:59.0%
+log_avg_msec=1000
+filename=/dev/nvme0n1
+startdelay=0
+write_bw_log=./tr_seq
+write_lat_log=./tr_seq
+write_iops_log=./tr_seq
+
+[worker1]

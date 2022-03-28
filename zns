@@ -18,14 +18,7 @@ filename=/dev/nvme0n1
 startdelay=0
 offset=0
 ;offset_increment=1M
-write_iops_log=./zns_default_1to32
-write_bw_log=./zns_default_1to32
-write_lat_log=./zns_default_1to32
+;write_iops_log=./zns_default_1to32
+;write_bw_log=./zns_default_1to32
+;write_lat_log=./zns_default_1to32
 
-[worker2]
-startdelay=0
-;size=256M
-offset=128M
-write_iops_log=./zns_default_1to32
-write_bw_log=./zns_default_1to32
-write_lat_log=./zns_default_1to32

@@ -1,0 +1,21 @@
+;Multi-thread write workload
+[global]
+ioengine=libaio
+rw=randwrite
+numjobs=1
+loops=3
+size=100%
+bs=512K
+direct=1
+time_based=1
+randrepeat=1
+norandommap
+runtime=100
+log_avg_msec=1000
+filename=/dev/nvme0n1
+startdelay=0
+write_bw_log=./tr_rand
+write_lat_log=./tr_rand
+write_iops_log=./tr_rand
+
+[worker1]
