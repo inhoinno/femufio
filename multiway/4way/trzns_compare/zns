@@ -1,8 +1,9 @@
 [global]
 ioengine=libaio
 rw=write
-bs=128K
+bs=512K
 size=3G
+iodepth=4
 loops=3
 direct=1
 group_reporting
@@ -14,9 +15,9 @@ zonesize=128M
 runtime=100
 log_avg_msec=1000
 filename=/dev/nvme0n1
-write_iops_log=./zns_1to1
-write_bw_log=./zns_1to1
-write_lat_log=./zns_1to1
+write_iops_log=./zns_1to32
+write_bw_log=./zns_1to32
+write_lat_log=./zns_1to32
 numjobs=1
 
 [worker1]
