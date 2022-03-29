@@ -17,9 +17,9 @@ filename=/dev/nvme0n1
 
 [worker1]
 startdelay=0
-write_iops_log=./zns_8c1w
-write_bw_log=./zns_8c1w
-write_lat_log=./zns_8c1w
+write_iops_log=./zns_16c2w
+write_bw_log=./zns_16c2w
+write_lat_log=./zns_16c2w
 
 ;[worker2]
 ;startdelay=100
