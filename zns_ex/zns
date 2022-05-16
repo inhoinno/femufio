@@ -2,8 +2,8 @@
 ioengine=sync
 rw=write
 numjobs=1
-bs=128K
-size=128M
+bs=512K
+size=1G
 direct=1
 time_based=1
 randrepeat=0
@@ -17,8 +17,7 @@ filename=/dev/nvme0n1
 [worker1]
 startdelay=0
 offset=0
-;offset_increment=1M
-;write_iops_log=./zns_default_1to32
-;write_bw_log=./zns_default_1to32
-;write_lat_log=./zns_default_1to32
+write_iops_log=./zns_default_1to8
+write_bw_log=./zns_default_1to8
+write_lat_log=./zns_default_1to8
 
