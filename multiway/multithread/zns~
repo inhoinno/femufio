@@ -1,7 +1,7 @@
 [global]
 ioengine=sync
 rw=write
-numjobs=64
+numjobs=16
 offset_increment=64M
 iodepth=1
 bs=128K
@@ -15,7 +15,7 @@ filename=/dev/nvme0n1
 
 [worker1]
 startdelay=0
-write_iops_log=./zns_1to16_64t
-write_bw_log=./zns_1to16_64t
-write_lat_log=./zns_1to16_64t
+write_iops_log=./zns_1to16_16t
+write_bw_log=./zns_1to16_16t
+write_lat_log=./zns_1to16_16t
 
